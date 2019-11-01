@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of jQuery Queued Animation</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style type="text/css">
+    .box{
+        width: 100px;
+        height: 100px;
+        background: #e02b2b;
+        margin-top: 30px;
+        border-style: solid;
+        border-color: #4412ce;
+    }
+
+
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".box")
+            .animate({width: "640px"})
+            .animate({height: "422px"})
+            .animate({marginLeft: "400px"})
+            .animate({borderWidth: "20px"})
+            .animate({opacity: 1.0});
+    });
+});
+</script>
+</head>
+<body>
+    <button style="" type="button">Suurenna kuva</button>
+    <button type="button">Pienennä kuva</button>
+    <div class="box"><img src="teku.jpg"></div>
+</body>
+</html>                               
